@@ -110,7 +110,6 @@
         android:layout_weight="1"
         android:background="@android:color/transparent"
         android:onClick="clicked"
-        android:text="JOY"
         android:textSize="30sp" />
 
     <Button
@@ -126,7 +125,6 @@
         android:layout_weight="1"
         android:background="@android:color/transparent"
         android:onClick="clicked"
-        android:text="കരച്ചിൽ"
         android:textSize="30sp" />
 
     <Button
@@ -142,7 +140,6 @@
         android:layout_weight="1"
         android:background="@android:color/transparent"
         android:onClick="clicked"
-        android:text="വെറുപ്പ്"
         android:textSize="30sp" />
     <!--</LinearLayout>-->
 

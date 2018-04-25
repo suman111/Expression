@@ -3,30 +3,66 @@
 
     <item
         is-multidex="true"
-        jar="/home/aahav/Documents/android_workspace/Expression_app/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jar="/root/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.1"
-        sha1="3d41ee2a02668785efb330b97ce01e7a09a924f5">
-        <dex dex="/home/aahav/Documents/android_workspace/Expression_app/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_284a2691ca8e34066e5b8241cfd7fb9ce20c657f/classes.dex" />
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="/home/aahav/Documents/android_workspace/temp_expression/Expression/app/build/intermediates/transforms/dex/debug/folders/1000/10/library-2.4.0_966625304e7208badec13abab7a99ab1be33bd6f/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/aahav/Documents/android_workspace/Expression_app/app/build/intermediates/exploded-aar/com.github.worker8/tourguide/1.0.17-SNAPSHOT/jars/classes.jar"
+        jar="/root/.android/build-cache/c3e1305a7f8520ff52c80e817be3c34144986636/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="/home/aahav/Documents/android_workspace/temp_expression/Expression/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9d405faeb9092a3f24782e06f5e23142c3af4916/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/root/Android/Sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.2/constraint-layout-solver-1.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="/home/aahav/Documents/android_workspace/temp_expression/Expression/app/build/intermediates/transforms/dex/debug/folders/1000/10/constraint-layout-solver-1.0.2_76f81077aea9bd1699aabfb9818dc8fa3bde44df/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/aahav/Documents/android_workspace/temp_expression/Expression/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="27b63a22a59219440ce90dc2a5cd054b5e0c35c0">
+        <dex dex="/home/aahav/Documents/android_workspace/temp_expression/Expression/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_4d9983478b8a81784aaf1d6e0e21d6413a010acb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/aahav/Documents/android_workspace/temp_expression/Expression/app/build/intermediates/exploded-aar/com.github.worker8/tourguide/1.0.17-SNAPSHOT/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.1"
         sha1="8fc5b2d799afab49b7642fd6204633fc75e31eac">
-        <dex dex="/home/aahav/Documents/android_workspace/Expression_app/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.github.worker8-tourguide-1.0.17-SNAPSHOT_aa4da9966698cb9d6ad8a65d5251939ff57a1102/classes.dex" />
+        <dex dex="/home/aahav/Documents/android_workspace/temp_expression/Expression/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.github.worker8-tourguide-1.0.17-SNAPSHOT_143c0b6a7d35fa4c33822f63b15fa22070b07c33/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/aahav/Documents/android_workspace/Expression_app/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jar="/home/aahav/Documents/android_workspace/temp_expression/Expression/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.1"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="/home/aahav/Documents/android_workspace/Expression_app/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_60571c116f849575a44cee8ec42a38b4518084f1/classes.dex" />
+        <dex dex="/home/aahav/Documents/android_workspace/temp_expression/Expression/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_52634f02ca7582f7d879542ad4392ccb69fcceb1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/root/.android/build-cache/a4a6ceea61eba4bb98b9241ce43ae304f1a16823/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="7c5e4db194c6ec3e62b70759ef913381ea4903d1">
+        <dex dex="/home/aahav/Documents/android_workspace/temp_expression/Expression/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6fd99ce02974f8ea2f1f84f97294f21575eb12be/classes.dex" />
     </item>
 
 </items>

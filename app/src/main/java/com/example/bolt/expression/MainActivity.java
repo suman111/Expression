@@ -58,4 +58,9 @@ public class MainActivity extends AppCompatActivity {
         this.finishAffinity();
     }
 
+    public void setExit(View view){
+
+        this.finishAffinity();
+    }
+
 }

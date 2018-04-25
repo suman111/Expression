@@ -37,12 +37,12 @@ public class game1 extends AppCompatActivity {
     //public obj ob = new obj(R.drawable.joy1, "JOY");
     public int[] bid={R.id.b1, R.id.b2,R.id.b3};
     public int[] rsid = {R.drawable.joy1, R.drawable.anger1, R.drawable.cry1, R.drawable.disgust1, R.drawable.sad1,R.drawable.satisfied1,R.drawable.smiling1,R.drawable.surprise1};
-    public String[] name = { "ആനന്ദം" , "ദേഷ്യം" , "കരച്ചിൽ " , "വെറുപ്പ് " , "വിഷമം ", "തൃപ്തി","പുഞ്ചിരി","അത്ഭുതം" };
+    public String[] name = { "ആനന്ദം" , "ദേഷ്യം" , "കരച്ചിൽ" , "വെറുപ്പ്" , "വിഷമം", "തൃപ്തി","പുഞ്ചിരി","അത്ഭുതം" };
 
     ArrayList<String> list = new ArrayList<String>();
     ArrayList<String> newItem = new ArrayList<String>();
     ArrayList<Button> buttonArray = new ArrayList<Button>();
-
+    ArrayList<Integer> random_array = new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,7 +56,24 @@ public class game1 extends AppCompatActivity {
         wrongVoice = MediaPlayer.create(this, R.raw.wrong);
         shake = AnimationUtils.loadAnimation(this, R.anim.shake);
         cardView.setCardBackgroundColor(Color.TRANSPARENT);
+
+        for(int i=0;i<8;i++){
+            random_array.add(i);
+        }
+
+
+
+      /*  if(list.contains(me)){
+            newItem=list;
+            newItem.remove(me);
+        }
+        else{
+            newItem=list;
+        }*/
+
         createImg();
+
+
         iv.setBackgroundResource(c);
 
 
@@ -67,16 +84,18 @@ public class game1 extends AppCompatActivity {
         buttonArray.add(b1);
         buttonArray.add(b2);
         buttonArray.add(b3);
-        b1.setText(me);
+       // b1.setText(me);
+
+
 
 
         list.add("ആനന്ദം");
         list.add("ദേഷ്യം");
-        list.add("കരച്ചിൽ ");
-        list.add("വെറുപ്പ് ");
+        list.add("കരച്ചിൽ");
+        list.add("വെറുപ്പ്");
         list.add("വിഷമം ");
         list.add("തൃപ്തി");
-        list.add("പുഞ്ചിരി ");
+        list.add("പുഞ്ചിരി");
         list.add("അത്ഭുതം");
 
         sounds = new ArrayList<>();
@@ -86,6 +105,26 @@ public class game1 extends AppCompatActivity {
         sounds.add(R.raw.correct4);
         sounds.add(R.raw.correct5);
         sounds.add(R.raw.correct6);
+        shuffle();
+
+
+   /* if(newItem.size()!=0) {
+    buttonArray.get(2).setText(me);
+    buttonArray.get(1).setText(newItem.get(0));
+    buttonArray.get(0).setText(newItem.get(1));
+    newItem.add(me);
+    }*/
+        if ((newItem.size() != 0)&&(newItem.get(0)!=newItem.get(1))) {
+
+            if((newItem.get(0)!=me)&&(newItem.get(1)!=me)) {
+
+                buttonArray.get(2).setText(me);
+                buttonArray.get(1).setText(newItem.get(0));
+                buttonArray.get(0).setText(newItem.get(1));
+               // newItem.add(me);
+
+            }
+        }
 
 
 
@@ -144,6 +183,7 @@ public class game1 extends AppCompatActivity {
 
                 else {
 
+                    newItem=list;
 
                     v.startAnimation(shake);
 
@@ -194,12 +234,18 @@ public class game1 extends AppCompatActivity {
                                     Collections.shuffle(buttonArray);
 
                                     //cardView.setCardBackgroundColor(Color.GREEN);
-                                    if (newItem.size() != 0) {
+                                    if (newItem.size() !=0){
 
-                                        buttonArray.get(2).setText(me);
-                                        buttonArray.get(1).setText(newItem.get(0));
-                                        buttonArray.get(0).setText(newItem.get(1));
+                                            buttonArray.get(2).setText(me);
+                                            buttonArray.get(1).setText(newItem.get(0));
+                                            buttonArray.get(0).setText(newItem.get(1));
+
+                                          // newItem=list;
+                                           // newItem.remove(0);
+
+
                                     }
+
 
                                     // cardView.setCardBackgroundColor(Color.TRANSPARENT);
 
@@ -257,6 +303,22 @@ public class game1 extends AppCompatActivity {
 
     public void shuffle(){
 
+        newItem=list;
+
+        if(newItem.contains(me)){
+            newItem.remove(me);
+        }
+
+      /*  if(newItem.isEmpty()){
+            newItem=list;
+
+            if(list.contains(me)){
+
+                newItem.remove(me);
+            }
+
+        }*/
+
        if(list.contains(me)){
 
            newItem=list;
@@ -272,8 +334,21 @@ public class game1 extends AppCompatActivity {
     public void createImg(){
         idx = new Random().nextInt(rsid.length);
 
-        c = rsid[idx];
-        me = name[idx];
+        if(random_array.isEmpty()){
+            for(int i=0;i<8;i++){
+                random_array.add(i);
+            }
+        }
+
+        Collections.shuffle(random_array);
+
+
+        Log.d("Rondam",String.valueOf(random_array));
+
+        c = rsid[random_array.get(0)];
+        me = name[random_array.get(0)];
+
+        random_array.remove(0);
 
 
     }
