@@ -142,6 +142,14 @@ public class game1 extends AppCompatActivity {
         startActivity(intent);
 
     }
+    @Override
+    public void onBackPressed() {
+
+        SceneTracker.setCorrectedItem(0);
+        SceneTracker.setWrongItem(0);
+        Intent intent = new Intent(this,MainActivity.class);
+        startActivity(intent);
+    }
 
 
 
